@@ -1,3 +1,7 @@
 function division(divisor, dividendo) {
-    return dividendo / divisor
+    if(divisor > 0) {
+        return dividendo / divisor
+    } else {
+        throw new Error('no se puede dividir por 0')
+    }
 }
